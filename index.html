@@ -1,0 +1,41 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>ScribblR</title>
+  <link rel="icon" href="ScribblR Logo.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+  <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js" type="text/javascript"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body style="background-color: #1a1a1a; font-family: 'Titillium Web', sans-serif;">
+<center>
+  <div id="myModal" class="modal fade">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      <h4 class="modal-title btn btn-success" style="border: 2px solid #1a1a1a">Scribbles</h4>
+      </div>
+      <div class="modal-body">
+        <img src="sketch1.png">
+        <img src="sketch2.png">
+      </div>
+    </div>
+  </div>
+  <h2 class="text-success" style="margin-left: 50; padding-left: 80px;" id="heading"><img style="width: 50px; height: 50px; margin-right: 10px; margin-top: 10px; border-radius: 10px; border: 2px solid white" src="ScribblR Logo.gif">ScribblR <button class="btn btn-success" style="border: 2px solid white; margin-top: 3px; float: right; margin-right: 10px;" data-toggle="modal" data-target="#myModal">Show Skribbles</button></h2>
+  <hr>
+  <h4 class="btn btn-success" style="border: 2px solid white" id="label">Sketch: </h4>
+  <br>
+  <h4 class="btn btn-success" style="border: 2px solid white" id="accuracy">Confidence: </h4>
+  <br>
+  <br>
+  <button class="btn btn-success btn-lg" style="border: 2px solid white" onclick="erasedrawing()"><img style="width: 33px;" src="https://cdn3.iconfinder.com/data/icons/ui-essential-elements/110/DeleteDustbin-512.png"></button>
+</center>
+<script src="main.js"></script>
+</body>
+</html>

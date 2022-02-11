@@ -1,0 +1,16 @@
+canvas{
+    border: 2px solid #4CAF50;
+    border-radius: 20px;
+    animation-name: dork;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+    margin-top: 155px;
+}
+@keyframes dork{
+    from{
+        box-shadow: 2px 2px 38px white;
+    }
+    to{
+        box-shadow: 2px 2px 38px #4CAF50;
+    }
+}
